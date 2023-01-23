@@ -1,0 +1,6 @@
+@media all and (max-width: 992px) {
+    .hebergements-plus-lespluspopulaires-container {
+
+        flex-direction: column;
+    }
+}
