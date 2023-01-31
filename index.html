@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tablette.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <script type="text/javascript"
         src="/86AAF7CD-A199-463A-BEEF-AEE7400B3F0D/main.js?attr=48ZnsKsWArDpQoknC6hLnxD4C2yjTHRmWWFX-aipJg-ojvcPNpEnl6dVsqPO4iR98m8Clwvb_dK6YOXx3W65qT-BPxKEI0CO4ItyL1Kni4zgr5tZ46oJpQ0AWteb7zW7qO46AQ9qv0_1lc54TYy4-n7YhwDqi-cfwNZAEv6uQrXN4z7tXfxtDd53rTaJ6rx9utjN3Hw3zD9hA6tI57pwOFlQqW_K8JT3o0H9zZrCsmmhu5gES6t5H60mX-eFd4NIcinhb3-hGmnRXh_LqkmvwFQfBaJn9YdWMEUjlaGB4XmFk5i0S7DchSB14IuDpqN-GzMBJmBZeOC-eue01GcOz46WpKL_jiC8rb9Mg9UfqvDsNFXWFNrJ8BoukduKwtNTqvufptJX5Dfd_z3xissTxsPbqdr6DtFKWoY7Z_uQWG6ru8NU7uWT_56aEPLok-MiCSgXq5WkAZM9_XiN9ZrLt9QeHmVcbRseqeUyg_1kWVCmAkP7upzIWY_N76whcWnPyfuyFHn8-1UJkuc7jrVbP4oBoPgrI3YmIqxaEbj2fTI0ZpskFjVVhGQkVmaXenjSB9iRdsbEcJXaaV37AYjv0aWF51YF2j0CuW4J0W4s41D2czmlL4tQ-x6Ey1Q9r_SWPtKWKM59r9sjLQ1qUTdrQXWT3hbx-_RDxtm7HPuytK3O9vImHTzkD8a7F-sdieKVkXtra9M6HYBCyVvmn4MIuHtFb9wGiGbLPwmNwc_I_ZaWMO7DAgteK7ShnNjHLwP1bOYaVztbSuORGn5RXqj2b51WyTmxbiSaOhmnpMcUhEVauxvux8-fe3GBdKnz0ejMShiljHhdW5dxYPKkdhr49eZqF-YeDjSHLGlH587Y7QHeQWVbleI5CBxFY9si5_tE8T8MspVirKIier-XMqSM7lhSKpjLsL88dtAaKBum4Y2MUI94UQfmaZgitzWwcrz-zvILSyJZLgjkLF9yYi3eYA7P_inL13dcfbaXkGMfbLU9pGQEUeGDcS_wfdpkTYKMOaNrm5YlJabRDj4jgyhP_U15WmWQ3ez54JTRIH3nccilw4nF3_s82u33f-Kw5dRfG3rJeMrEK-5uZIHhgDbqN92CshS0Cy-1N7AMERTyd-e-HLj8BHZk27L-nLefmI0qTP0E1hE4Wtx-cqEdm9G7JBRac2XLACoJO7tQ8lJyI_nL0bGODNHkrhVHxeN0br1dlnOdcvCg_wlBAccIhhzrsRWoDYBuqLilLRWX86ps9Wgi8WihU73fYWIHnTe9gOnm_l4Wh2z3Bvs9CpOJiNWW-mh0kJox9BhRVnOHqIbWX1l4k_ft7npYuq6BengGmQ32Mn9Bk4siwiiaHbyasj7uktlmRpsNRHlrWTbFP6R3bFTe1x3CpF5vto9_O_YJptZ75fqgbUyoB4xtIfTN7aWcrl0XRUnqWptCyqayUXhX15LwJ6d021GaOHZjpRqKU4BrnncYUnlH6S7rUWcduXmn4vT_Ux7IzdhlIQ8fM2sb-M0PqLrnlFDfrVOHNyZAfhP0aeLJDOWparfDFRydUMyu5g"
         nonce="55e458d58b1d128e9172d58e6aed438a" charset="UTF-8"></script>
@@ -34,12 +38,12 @@
     <!-- Recherche vacances de rêve, ligne d'accroche, recherche et filtre -->
     <section class="block-recherche">
         <div id="block-recherche_description">
-            <p id="ligne-accroche">Trouvez votre hébergement pour des vacances de rêve </p>
+            <h1 id="ligne-accroche">Trouvez votre hébergement pour des vacances de rêve </h1>
             <p class="p-unbolded">En plein centre-ville ou en pleine nature</p>
         </div>
 
         <form id="input-recherche" method="get">
-            <i class="fas fa-map-marker-alt"></i> <!-- A conserver -->
+            <i class="fas fa-map-marker-alt"></i>
             <input type="text" value="Marseille, France">
             <button id="button_block-recherche">
                 Rechercher
@@ -54,7 +58,7 @@
                 <p>Filtres</p>
             </div>
 
-            <div class="filtres-elements">
+            <div class="filtres-elements filtres-buttons">
                 <button><i class="fas fa-money-bill-wave"></i>Economique</button>
                 <button><i class="fas fa-child"></i>Familial</button>
                 <button><i class="fas fa-heart"></i>Romantique</button>
@@ -71,8 +75,8 @@
         <!-- Hebergements à marseille + les plus populaires-->
         <section id="hebergements" class="hebergements-plus-lespluspopulaires-container">
             <!--Marseille -->
-            <article id="hebergements-marseille" class="hebergements-plus-les-plus-populaires">
-                <p class="hebergements-description"> Hébergements à Marseille</p>
+            <article class="hebergements-marseille hebergements-plus-les-plus-populaires">
+                <h2 class="hebergements-description"> Hébergements à Marseille</h2>
 
                 <div id="offres-hebergement-container">
 
@@ -83,7 +87,7 @@
 
                         <div class="description-offre">
                             <p>Hôtel La Canebière</p>
-                            <p class="p-unbolded">Nuit à partir de 25€</p>
+                            <p class="p-unbolded price">Nuit à partir de 25<strong>€</strong></p>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -99,7 +103,7 @@
 
                         <div class="description-offre">
                             <p>Hôtel du port</p>
-                            <p class="p-unbolded">Nuit à partir de 52€</p>
+                            <p class="p-unbolded price">Nuit à partir de 52<strong>€</strong></p>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -115,7 +119,7 @@
 
                         <div class="description-offre">
                             <p>Hôtel Les Mouettes</p>
-                            <p class="p-unbolded">Nuit à partir de 76€</p>
+                            <p class="p-unbolded price">Nuit à partir de 76<strong>€</strong></p>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -131,7 +135,7 @@
 
                         <div class="description-offre">
                             <p>Hôtel de la mer</p>
-                            <p class="p-unbolded">Nuit à partir de 46€</p>
+                            <p class="p-unbolded price">Nuit à partir de 46<strong>€</strong></p>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -147,7 +151,7 @@
 
                         <div class="description-offre">
                             <p>Auberge Le Panier</p>
-                            <p class="p-unbolded">Nuit à partir de 23€</p>
+                            <p class="p-unbolded price">Nuit à partir de 23<strong>€</strong></p>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -158,12 +162,12 @@
 
                     <div class="offres-hebergement">
                         <figure class="offre">
-                            <img src="hebergements/3_medium/Chez Amina.jpg" alt="">
+                            <img src="hebergements/3_medium/Chez-amina.jpg" alt="">
                         </figure>
 
                         <div class="description-offre">
                             <p>Hôtel Chez Amina</p>
-                            <p class="p-unbolded">Nuit à partir de 96€</p>
+                            <p class="p-unbolded price">Nuit à partir de 96<strong>€</strong></p>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -180,7 +184,7 @@
             <!-- Hebergements les plus populaires -->
 
 
-            <aside class="hebergements-plus-les-plus-populaires" id="lespluspopulaires">
+            <aside class="hebergements-plus-les-plus-populaires lespluspopulaires">
                 <div class="entete-populaires">
                     <div class="titre-aside">
                         <h2 class="hebergements-description"> Les Plus Populaires</h2>
@@ -195,53 +199,71 @@
 
                 <div class="lespluspopulaires-container">
                     <article class="offres-lespluspopulaires-containers"> <!-- cards les plus populaires -->
-                        <figure class="offre-lespluspopulaires">
-                            <img src="/hebergements/4_small/Soleil_du_matin.jpg" alt="">
+                        <figure class="offre-lespluspopulaires" id="offre-lespluspopulaires-le-soleil-du-matin">
+                            <img src="/hebergements/4_small/Soleil_du_matin.jpg" alt="" id="offre-une">
                         </figure>
 
-                        <div>
-                            <p class="lieu"> Hôtel Le soleil du matin</p>
-                            <p class="p-unbolded">Nuit à partir de 128€</p>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star grey-star"></i>
+                        <div class="description" id="description-le-soleil-du-matin">
+                            <div>
+                                <p class="lieu" id="lieu-version-desktop-mobile"> Hôtel Le soleil du <br> matin</p>
+                                <p class="lieu" id="lieu-version-tablette"> Hôtel Le soleil <br> du matin</p>
+                                <p class="p-unbolded price price-tablette">Nuit à partir de 128<strong>€</strong></p>
+                            </div>
+
+
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star grey-star"></i>
+                            </div>
+
                         </div>
                     </article>
                     <article class="offres-lespluspopulaires-containers">
 
-                        <figure class="offre-lespluspopulaires">
-                            <img src="/hebergements/4_small/Au_coeur_de_leau.jpg" alt="">
+                        <figure class="offre-lespluspopulaires" id="offre-lespluspopulaires-au-coeur-de-leau">
+                            <img src="/hebergements/4_small/Au_coeur_de_leau.jpg" alt="" id="offre-deux">
                         </figure>
 
-                        <div>
+                        <div class="description" id="description-au-coeur-de-leau">
+                            <div>
+                                <p class="lieu"> Chambres d'hôtes Au coeur de l'eau</p>
+                                <p class="p-unbolded price price-tablette"> Nuit à partir de 71<strong>€</strong></p>
+                            </div>
 
-                            <p class="lieu"> Chambres d'hôtes Au coeur de l'eau</p>
-                            <p class="p-unbolded" id="isolated-desc">Nuit à partir de 71€</p>
+                            
+                                
+                            
 
-
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star grey-star"></i>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star grey-star"></i>
+                            </div>
                         </div>
                     </article>
                     <article class="offres-lespluspopulaires-containers">
-                        <figure class="offre-lespluspopulaires">
-                            <img src="/hebergements/4_small/bleu-et-blanc.jpg" alt="">
+                        <figure class="offre-lespluspopulaires" id="offre-lespluspopulaires-bleu-et-blanc">
+                            <img src="/hebergements/4_small/bleu-et-blanc.jpg" alt="" id="offre-trois">
                         </figure>
 
-                        <div>
+                        <div class="description" id="description-bleu-et-blanc">
+                            <div>
+                                <p class="lieu"> Hôtel Bleu et Blanc</p>
+                                <p class="p-unbolded price price-tablette">Nuit à partir de 68<strong>€</strong></p>
+                            </div>
 
-                            <p class="lieu"> Hôtel Bleu et Blanc</p>
-                            <p class="p-unbolded">Nuit à partir de 68€</p>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star grey-star"></i>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star grey-star"></i>
+                            </div>
                         </div>
 
                     </article>
@@ -287,6 +309,7 @@
 
                 <div class="carte-activite">
                     <figure>
+                        
                         <img src="/activites/1_xlarge/Notre-Dame-de-la-Garde.jpg" alt="">
                     </figure>
                     <div>
