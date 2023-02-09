@@ -23,59 +23,118 @@
     <header>
         <div class="logo">
             <img src="logo/Booki.png" class="navbar-element" alt="logo de booki" title="logo de booki">
+            <img src="logo/Booki@3x.png" class="navbar-element logo-booki-mobile" alt="logo de booki"
+                title="logo de booki">
         </div>
 
         <nav id="navbar">
             <div class="ancre">
                 <ul class="navbar-element">
-                    <li><a href="#hebergements"> Hébergements</a></li>
-                    <li><a href="#activites"> Activités </a></li>
+                    <li><a href="#hebergements" class="ancre-hebergements"> Hébergements</a></li>
+                    <li><a href="#activites" class="ancre-activite"> Activités </a></li>
+
                 </ul>
+            </div>
+
+            <div class="ancre-mobile">
+
+
+                <a href="#hebergements" class="ancre-hebergements-mobile"> Hébergements</a>
+
+
+                <a href="#activites" class="ancre-activite-mobile"> Activités </a>
+
+
+
             </div>
         </nav>
     </header>
-
-    <!-- Recherche vacances de rêve, ligne d'accroche, recherche et filtre -->
-    <section class="block-recherche">
-        <div id="block-recherche_description">
-            <h1 id="ligne-accroche">Trouvez votre hébergement pour des vacances de rêve </h1>
-            <p class="p-unbolded">En plein centre-ville ou en pleine nature</p>
-        </div>
-
-        <form id="input-recherche" method="get">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="text" value="Marseille, France">
-            <button id="button_block-recherche">
-                Rechercher
-            </button>
-
-
-
-        </form>
-
-        <div id="filtres-container">
-            <div class="filtres-elements">
-                <p>Filtres</p>
+    <div class="padding-exclusif-mobile">
+        <!-- Recherche vacances de rêve, ligne d'accroche, recherche et filtre -->
+        <section class="block-recherche">
+            <div class="block-recherche_description-container">
+                <div id="block-recherche_description">
+                    <h1 id="ligne-accroche">Trouvez votre hébergement pour des vacances de rêve </h1>
+                    <p class="p-unbolded">En plein centre-ville ou en pleine nature</p>
+                </div>
+            </div>
+            <div class="recherche-vacances">
+                <form class="input-recherche" method="get">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" value="Marseille, France">
+                    <button id="button_block-recherche">
+                        <i class="fas fa-search"></i>
+                        <p> Rechercher </p>
+                    </button>
             </div>
 
-            <div class="filtres-elements filtres-buttons">
-                <button><i class="fas fa-money-bill-wave"></i>Economique</button>
-                <button><i class="fas fa-child"></i>Familial</button>
-                <button><i class="fas fa-heart"></i>Romantique</button>
-                <button><i class="fas fa-dog"></i>Animaux autorisés</button>
-            </div>
 
-        </div>
 
-        <p class="logements-disponible p-unbolded"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles
-            dans cette ville </p>
-    </section>
 
+            </form>
+
+
+            
+                <div class="filtres-container" id="filtres-container">
+
+                    <div class="filtres-elements">
+                        <p class="filtres-desc">Filtres</p>
+                    </div>
+
+                    <div class="filtres-elements filtres-buttons" id="filtres-sans-marge">
+
+                        <button>
+                            <div>
+                                <i class="fas fa-money-bill-wave"></i>
+                                <p> Economique</p>
+                            </div>
+
+                        </button>
+
+
+
+
+                        <button>
+                            <div>
+                                <i class="fas fa-child"></i>
+                                <p> Familial</p>
+                            </div>
+
+                        </button>
+                        <button>
+                            <div>
+                                <i class="fas fa-heart"></i>
+                                <p> Romantique</p>
+                            </div>
+
+                        </button>
+                        <button id="filtre-animaux">
+                            <div>
+                                <i class="fas fa-dog"></i>
+                                <p> Animaux autorisés</p>
+                            </div>
+
+
+                        </button>
+                    </div>
+                </div>
+            
+                
+
+
+
+
+            <p class="logements-disponible p-unbolded"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles
+                dans cette ville </p>
+        </section>
+    </div>
     <main>
         <!-- Hebergements à marseille + les plus populaires-->
         <section id="hebergements" class="hebergements-plus-lespluspopulaires-container">
             <!--Marseille -->
-            <article class="hebergements-marseille hebergements-plus-les-plus-populaires">
+
+            <article class="hebergements-marseille hebergements-plus-les-plus-populaires padding-exclusif-mobile">
+
                 <h2 class="hebergements-description"> Hébergements à Marseille</h2>
 
                 <div id="offres-hebergement-container">
@@ -233,9 +292,9 @@
                                 <p class="p-unbolded price price-tablette"> Nuit à partir de 71<strong>€</strong></p>
                             </div>
 
-                            
-                                
-                            
+
+
+
 
                             <div>
                                 <i class="fas fa-star"></i>
@@ -272,57 +331,60 @@
             </aside>
         </section>
 
-        <!-- Activites-a-Marseille-->
-        <section id="activites" class="activites-a-marseille">
-            <h2>
-                Activités à Marseille
-            </h2>
+        <div class="padding-exclusif-mobile">
+            <!-- Activites-a-Marseille-->
+            <section id="activites" class="activites-a-marseille">
+                <h2>
+                    Activités à Marseille
+                </h2>
 
-            <div class="activites-a-marseille-container"> <!--Contient les 4 cartes activités -->
+                <div class="activites-a-marseille-container"> <!--Contient les 4 cartes activités -->
 
 
-                <div class="carte-activite"> <!-- La carte activité (pareil pour les 4 autres articles)-->
-                    <figure>
-                        <img src="/activites/1_xlarge/Vieux-Port.jpg" alt="Vieux port">
-                    </figure>
-                    <div>
-                        <p>Vieux-Port </p>
+                    <div class="carte-activite"> <!-- La carte activité (pareil pour les 4 autres articles)-->
+                        <figure>
+                            <img src="/activites/1_xlarge/Vieux-Port.jpg" alt="Vieux port">
+                        </figure>
+                        <div>
+                            <p>Vieux-Port </p>
+                        </div>
+                    </div>
+
+                    <div class="carte-activite">
+                        <figure>
+                            <img src="/activites/1_xlarge/Fort-de-Pomègues.jpg" alt="Fort de Pomègues">
+                        </figure>
+                        <div>
+                            <p>Fort de Pomègues </p>
+                        </div>
+                    </div>
+                    <div class="carte-activite">
+                        <figure>
+                            <img src="/activites/1_xlarge/Parc-national-des-calanques.jpg" alt="">
+                        </figure>
+                        <div>
+                            <p>Parc national des Calanques </p>
+                        </div>
+                    </div>
+
+                    <div class="carte-activite">
+                        <figure>
+
+                            <img src="/activites/1_xlarge/Notre-Dame-de-la-Garde.jpg" alt="">
+                        </figure>
+                        <div>
+                            <p class="activite-version-tablette">Notre Dame <br> De La Garde</p>
+                            <p class="activite-version-mobile-desktop">Notre Dame De La Garde</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="carte-activite">
-                    <figure>
-                        <img src="/activites/1_xlarge/Fort-de-Pomègues.jpg" alt="Fort de Pomègues">
-                    </figure>
-                    <div>
-                        <p>Fort de Pomègues </p>
-                    </div>
-                </div>
-                <div class="carte-activite">
-                    <figure>
-                        <img src="/activites/1_xlarge/Parc-national-des-calanques.jpg" alt="">
-                    </figure>
-                    <div>
-                        <p>Parc national des Calanques </p>
-                    </div>
-                </div>
-
-                <div class="carte-activite">
-                    <figure>
-                        
-                        <img src="/activites/1_xlarge/Notre-Dame-de-la-Garde.jpg" alt="">
-                    </figure>
-                    <div>
-                        <p>Notre Dame De La Garde</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer class="pied-de-page">
         <div class="pied-de-page-container">
-            <div>
+            <div class="a-propos">
                 <h2>
                     À propos
                 </h2>
@@ -333,7 +395,7 @@
                 </ul>
 
             </div>
-            <div>
+            <div class="nos-hebergements">
                 <h2>
                     Nos hébergements
                 </h2>
