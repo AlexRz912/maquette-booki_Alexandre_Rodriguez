@@ -134,15 +134,7 @@
     
     /* section recherche */
 
-    #filtres-sans-marge {
-        margin: 0;
-        padding: 0px;
-    }
     
-
-    #filtres-container {
-        display: none;
-    }
     .recherche-vacances {
         
         display: flex;
@@ -160,6 +152,10 @@
     /* section filtres */
 
     
+    #filtres-container {
+        display: none;
+    }
+    
 
     
     .filtres-container {
@@ -176,11 +172,43 @@
 
     .filtres-container-mobile {
         display: block;
+        margin: 0;
         
     }
     
+    .filtres-elements-mobile button {
+        
+
+
+            font-weight: bold;
+            font-size: 17px;
+            margin-right: 2%;
+            margin-left: 2%;
+        
+            background-color: white;
+            border: 3px solid #d9d9d9;
+            border-radius: 25px;
+            transition: 0.2s;
+            cursor: pointer;
+        
+        
+        
+    }
+
+    .filtres-elements-mobile button div {
+        display: flex;
+        flex-direction: row;
+    }
+    .filtres-elements-mobile button:focus {
+        background-color: #DEEBFF;
     
-    .filtres-buttons {
+    }
+
+    .filtres-elements-mobile .fas {
+        color: #0065FC;
+        padding: 10px 10px 10px 10px;
+    }
+    .filtres-buttons-mobile {
         width: 60%; 
         min-width: 400px;
     }
