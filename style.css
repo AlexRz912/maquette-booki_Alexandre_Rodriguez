@@ -7,17 +7,17 @@
 }
 
 body {
-    
+
     max-width: 1400px;
     padding-top: 40px;
     padding-left: 4%;
     padding-right: 4%;
     margin: auto;
     font-family: "raleway", Arial, Helvetica, sans-serif;
-    
+
 }
 
-form button {
+form p {
     font-family: "raleway", Arial, Helvetica, sans-serif;
 }
 
@@ -43,21 +43,27 @@ p {
 }
 
 
- /* logo booki à gauche/navbar à droite
+/* logo booki à gauche/navbar à droite
  */
 header {
-    
+
     margin: 5px 20px 40px 0px;
-    
+
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
-    
+    justify-content: space-between;
+
 }
 
 header img {
     width: 33%;
 }
+
+header .logo-booki-mobile {
+    display: none;
+
+}
+
 
 #navbar {
     height: 100%;
@@ -67,22 +73,21 @@ header img {
 header ul {
     display: flex;
     flex-direction: row;
-    
+
 }
 
 /*section ancre */
 
 
 nav a {
-    
+
     text-decoration: none;
     color: black;
-    padding-top: 42px; /*42px 20px 0px 20px */
+    padding: 42px 20px 0px 20px;
+    /*42px 20px 0px 20px */
 
-    padding-left: 20px;
-    padding-right: 20px;
-    
-    
+
+
 }
 
 nav a:hover {
@@ -90,6 +95,10 @@ nav a:hover {
     color: #0065FC;
 }
 
+
+.ancre-mobile {
+    display: none;
+}
 /* section recherche */
 
 
@@ -99,7 +108,7 @@ nav a:hover {
 }
 
 #ligne-accroche {
-    
+
     font-size: 22px;
     margin-bottom: 7px;
 }
@@ -107,6 +116,7 @@ nav a:hover {
 #block-recherche_description .p-unbolded {
     font-size: 1em;
 }
+
 .fa-map-marker-alt {
     font-size: 1.2em;
     background-color: #F2F2F2;
@@ -115,10 +125,15 @@ nav a:hover {
     border-radius: 15px 0px 0px 15px;
 }
 
-#input-recherche {
+.input-recherche {
     margin-bottom: 20px;
 
 }
+
+.input-recherche .fa {
+    display: none;
+}
+
 input {
 
     font-size: 1.05em;
@@ -131,11 +146,11 @@ input {
     padding-bottom: 13px;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
-    
+
 }
 
 #button_block-recherche {
-    
+
     background-color: #0065FC;
     color: white;
     padding-top: 17px;
@@ -148,12 +163,15 @@ input {
     padding-right: 17px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    
+
 }
 
+.recherche-vacances .fa-search {
+    display: none;
+}
 /* section filtres */
 
-#filtres-container {
+.filtres-container {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -161,59 +179,78 @@ input {
 }
 
 
+.filtres-desc {
+    margin-top: 5px;
+}
+
 .filtres-elements p {
-    padding-top: 15px;
+
     font-size: 15px;
     margin-left: 10px;
     margin-right: 10px;
+    padding: 10px 0px 10px 0px;
 
 }
 
+
+
 .filtres-elements .fas {
-    color:#0065FC;
-    padding-right: 10px;
-    padding-left: 5px;
+    color: #0065FC;
+
+    padding: 10px 10px 10px 10px;
 }
 
 .filtres-buttons {
     width: 100%;
+
 }
+
 
 .filtres-elements button {
 
+
     font-weight: bold;
     font-size: 17px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 10px;
-    background-color:white;
+    margin-right: 2%;
+    margin-left: 2%;
+
+    background-color: white;
     border: 3px solid #d9d9d9;
     border-radius: 25px;
     transition: 0.2s;
     cursor: pointer;
+
+
+}
+
+.filtres-elements button div {
+    display: flex;
+    flex-direction: row;
 }
 
 .filtres-elements button:focus {
     background-color: #DEEBFF;
-    
+
 }
 
 .logements-disponible {
     margin-bottom: 30px;
 }
+
 .fa-info {
     font-size: 10px;
-    color:#0065FC;
+    color: #0065FC;
     border: 2px solid #d9d9d9;
     border-radius: 100%;
     padding: 6px 10px;
     margin-right: 40px;
-    
+
 }
 
-.logements-disponible p{
+.logements-disponible p {
     padding-top: 15px;
 }
+
 /* section Hébergements à gauche/plus populaires à droite */
 
 /* container d'hebergement ET des plus populaires */
@@ -224,18 +261,19 @@ input {
     flex-wrap: wrap;
     margin-bottom: 60px;
     justify-content: space-between;
-    
+    width: 100%;
+
 }
 
 /* couleurs et marges pour hebergements/les-plus-populaires */
 
 .hebergements-plus-les-plus-populaires {
     background-color: #F2F2F2;
-    border-radius: 25px; 
+    border-radius: 25px;
     padding-top: 30px;
     padding-left: 35px;
     padding-right: 35px;
-    
+
 }
 
 /* avis client étoiles pour hebergements/les-plus-populaires */
@@ -267,11 +305,12 @@ input {
     display: flex;
     flex-direction: column;
     width: 65%;
-    
-    
-    
-    
+
+
+
+
 }
+
 /* container qui contient les 6 cartes */
 
 #offres-hebergement-container {
@@ -295,14 +334,14 @@ input {
 
 
 .offre {
-    
-    
+
+
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    
-    
-    
-    
+
+
+
+
 }
 
 
@@ -314,7 +353,7 @@ input {
 }
 
 .description-offre {
-    padding-top: 4px;  
+    padding-top: 4px;
     padding-left: 8px;
 }
 
@@ -331,10 +370,10 @@ input {
 }
 
 .lespluspopulaires {
-    
-    
+
+
     width: 32%;
-    
+
 }
 
 /* entete des plus populaires titre et graph */
@@ -344,7 +383,7 @@ input {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    
+
 }
 
 .graph-aside {
@@ -358,15 +397,15 @@ input {
 
     display: flex;
     flex-direction: column;
-    
-    padding: 0px 0px 0px 0px;
+
+
 }
 
 /* la card des offres plus populaires */
 
 .offres-lespluspopulaires-containers {
-    
-    
+
+
     position: relative;
     background-color: white;
     border-radius: 20px;
@@ -382,7 +421,7 @@ input {
 
     padding-left: 5px;
     width: 55%;
-    
+
 }
 
 #offre-lespluspopulaires-au-coeur-de-leau {
@@ -394,14 +433,15 @@ input {
     width: 55%;
     padding-left: 5px;
 }
+
 .offre-lespluspopulaires img {
-    
-    
+
+
     height: 120px;
     object-fit: cover;
     width: inherit;
     border-radius: 15px 0px 0px 15px;
-    
+
 }
 
 
@@ -409,25 +449,25 @@ input {
     padding: 10px 20px 5px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
     height: 125px;
-    
+
 }
 
 #description-le-soleil-du-matin {
-   position: absolute;
-   top: 0;
-   left: 30%;
+    position: absolute;
+    top: 0;
+    left: 30%;
 }
 
 #description-au-coeur-de-leau {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 30%;
 }
 
 #description-bleu-et-blanc {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 30%;
 }
@@ -440,29 +480,40 @@ input {
 #lieu-version-tablette {
     display: none;
 }
+
 /* Activités à Marseille */
 .activites-a-marseille {
     margin-bottom: 40px;
 }
+
 /*titre */
 .activites-a-marseille h2 {
     margin-bottom: 25px;
 }
+
 .activites-a-marseille-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
 
 .carte-activite {
     background-color: white;
     border-radius: 25px;
     width: 23%;
-    height: 445px;
+
     box-shadow: 0px 0px 20px rgb(186, 186, 186);
+
 }
 
+.activite-version-mobile-desktop {
+    display: block;
+}
+
+.activite-version-tablette {
+    display: none;
+}
 
 .carte-activite img {
     object-fit: cover;
@@ -477,20 +528,30 @@ input {
 }
 
 
+
+
 /* Pied-de-page */
 
 .pied-de-page {
     background-color: #F2F2F2;
     width: 100%;
-    
+
 }
 
 .pied-de-page-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 40px 350px 40px 60px;
+    padding: 40px 0px 40px 60px;
 }
+
+.a-propos {
+    margin-right: 25%;
+}
+
+.nos-hebergements {
+    margin-right: 20%;
+}
+
 
 .pied-de-page h2 {
     font-size: 14px;
