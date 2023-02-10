@@ -125,7 +125,7 @@
     }
 
     #block-recherche_description .p-unbolded {
-        font-size: 1em;
+        font-size: 16px;
         
         
     }
@@ -148,18 +148,27 @@
     .recherche-vacances .fa-search {
         display: block;
     }
+
+    #button_block-recherche {
+        padding-bottom: 17px;
+        margin-left: -20px;
+    }
     
     /* section filtres */
 
     
     
-    
+    .global-container-mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 
     
     .filtres-container {
         
         
-        display: block;
+        display: none;
         width: 100%;
         padding-left: auto;
         padding-right: auto;
@@ -170,6 +179,7 @@
 
     .filtres-container-mobile {
         display: block;
+        min-width: 350px;
         margin: 0;
         
     }
@@ -182,7 +192,7 @@
             font-size: 17px;
             margin-right: 2%;
             margin-left: 2%;
-        
+            margin-bottom: 10px;
             background-color: white;
             border: 3px solid #d9d9d9;
             border-radius: 25px;
@@ -191,6 +201,15 @@
         
         
         
+    }
+
+    .filtres-elements-mobile p {
+
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px 0px 10px 0px;
+    
     }
 
     .filtres-elements-mobile button div {
@@ -205,14 +224,29 @@
     .filtres-elements-mobile .fas {
         color: #0065FC;
         padding: 10px 10px 10px 10px;
-    }
-    .filtres-buttons-mobile {
-        width: 60%; 
-        min-width: 400px;
-    }
+    } 
     
+    
+    .filtres-buttons-mobile p {
+        font-size: 12px;
+    }
     #filtre-animaux {
         margin-left: 12px;
+    }
+
+    .fa-info {
+        margin-right: 10px;
+    }
+    .logements-disponible {
+        font-size: 10px;
+        text-align: center;
+        margin-left: -40px;
+        margin-top: 10px;
+    }
+
+   .hebergements-plus-lespluspopulaires-container {
+        display: flex;
+        flex-direction: column-reverse;
     }
     .hebergements-plus-les-plus-populaires {
         background-color: #ffffff;
@@ -227,9 +261,10 @@
         
     }
 
+    
     .hebergements-marseille img {
         
-        height: 220px;
+        
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
@@ -252,7 +287,7 @@
         position: relative;
         background-color: white;
         border-radius: 20px;
-        height: 260px;
+        
         margin-bottom: 35px;
         width: 100%;
         padding: 5px 0px 5px 0px;
@@ -262,7 +297,7 @@
     .offre-lespluspopulaires img {
     
     
-        height: 250px;
+        
         object-fit: cover;
         width: inherit;
         border-radius: 15px 0px 0px 15px;
@@ -274,7 +309,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between; 
-        height: 250px;
+        
         
     }
 
@@ -294,11 +329,21 @@
         flex-direction: column;
     }
 
-    .carte-activite {
+    .carte-activite-mobile {
         width: 93%;
+        height: 100px;
         margin-bottom: 40px;
         margin-left: 20px;
         margin-right: 20px;
+        padding-bottom: 250px;
+    }
+
+    .carte-activite img {
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
     }
 
 
