@@ -114,11 +114,11 @@ nav a:hover {
 }
 
 #block-recherche_description .p-unbolded {
-    font-size: 1em;
+    font-size: 18px;
 }
 
 .fa-map-marker-alt {
-    font-size: 1.2em;
+    font-size: 20px;
     background-color: #F2F2F2;
     padding: 15px 17px 16px 17px;
     margin-right: -5px;
@@ -136,7 +136,7 @@ nav a:hover {
 
 input {
 
-    font-size: 1.05em;
+    font-size: 18px;
     font-weight: bold;
     font-family: "ralewayregular", Arial, Helvetica, sans-serif;
     outline: none;
@@ -163,7 +163,10 @@ input {
     padding-right: 17px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+    
 }
 
 .recherche-vacances .fa-search {
@@ -182,23 +185,13 @@ input {
     display: none;
 }
 .filtres-desc {
-    margin-top: 5px;
+    margin-top: 12px;
+    margin-right: 12px;
 }
-
-.filtres-elements p {
-
-    font-size: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px 0px 10px 0px;
-
-}
-
-
 
 .filtres-elements .fas {
     color: #0065FC;
-
+    
     padding: 10px 10px 10px 10px;
 }
 
@@ -215,12 +208,15 @@ input {
     font-size: 17px;
     margin-right: 2%;
     margin-left: 2%;
-
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
     background-color: white;
     border: 3px solid #d9d9d9;
     border-radius: 25px;
     transition: 0.2s;
     cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px 10px 0px 0px;
 
 
 }
@@ -264,7 +260,18 @@ input {
     margin-bottom: 60px;
     justify-content: space-between;
     width: 100%;
+    
 
+}
+
+.hebergements-plus-lespluspopulaires-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.activites-a-marseille-container a {
+    text-decoration: none;
+    color: black;
 }
 
 /* couleurs et marges pour hebergements/les-plus-populaires */
@@ -282,7 +289,7 @@ input {
 
 .fa-star {
     color: #0065FC;
-    font-size: 0.8em;
+    font-size: 12px;
     margin-right: -3px;
 }
 
@@ -294,7 +301,7 @@ input {
 
 /* entete des hebergements */
 .hebergements-description {
-    font-size: 1.3em;
+    font-size: 20px;
     padding-bottom: 30px;
     margin-top: 10px;
 }
@@ -403,6 +410,9 @@ input {
 
 }
 
+.titre-activites-version-mobile {
+    display: none;
+}
 /* la card des offres plus populaires */
 
 .offres-lespluspopulaires-containers {
@@ -449,6 +459,7 @@ input {
 
 .offres-lespluspopulaires-containers .description {
     padding: 10px 20px 5px 20px;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -519,7 +530,7 @@ input {
 
 .carte-activite img {
     object-fit: cover;
-    width: 100%;
+    
     height: 390px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
