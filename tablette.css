@@ -23,6 +23,12 @@
         margin-bottom: 10px;
     }
 
+    .filtres-desc {
+        margin-top: 18px;
+        margin-right: 12px;
+    }
+    
+
     .hebergements-marseille {
         display: flex;
         flex-direction: column;
