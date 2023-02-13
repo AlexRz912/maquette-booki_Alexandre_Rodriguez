@@ -12,11 +12,17 @@
         padding-right: 10px;
         margin-bottom: 10px;
     }
+
+    
     .filtres-desc {
         font-size: 12px;
         font-weight: bold;
         margin-top: 18px;
         margin-right: 12px;
+    }
+
+    .filtres-buttons span {
+        font-size: 14px;
     }
     /* hebergements-marseille */
     .hebergements-marseille {
@@ -25,12 +31,7 @@
         width: 100%;
         margin-bottom: 40px;
     }
-    #lieu-version-tablette { /* lieu version tablette avec un retour à la ligne */
-        display: block;
-    }
-    #lieu-version-desktop-mobile {
-        display: none;
-    }
+   
     .description .lieu {
         font-size: 16px;
     } /* les plus populaires */
@@ -62,12 +63,6 @@
         height: 210px;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
-    }
-    .activite-version-tablette {
-        display: block;
-    }
-    .activite-version-mobile-desktop {
-        display: none;
     }
 }
 
