@@ -12,15 +12,12 @@
         padding-right: 10px;
         margin-bottom: 10px;
     }
-
-    
     .filtres-desc {
         font-size: 12px;
         font-weight: bold;
         margin-top: 18px;
         margin-right: 12px;
     }
-
     .filtres-buttons span {
         font-size: 14px;
     }
@@ -31,7 +28,6 @@
         width: 100%;
         margin-bottom: 40px;
     }
-   
     .description .lieu {
         font-size: 16px;
     } /* les plus populaires */
@@ -65,4 +61,3 @@
         border-top-right-radius: 25px;
     }
 }
-
