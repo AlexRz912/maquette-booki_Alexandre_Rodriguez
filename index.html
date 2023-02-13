@@ -41,7 +41,7 @@
         <div class="padding-exclusif-mobile">
             <!-- Recherche vacances de rêve, ligne d'accroche, recherche et filtre -->
             <section class="block-recherche">
-                <div class="block-recherche_description-container">
+                <div class="block-recherche_description-container"> <!-- double container de la description du block recherche pour display: flex;-->
                     <div id="block-recherche_description">
                         <h1 id="ligne-accroche">Trouvez votre hébergement pour des vacances de rêve </h1>
                         <p class="p-unbolded">En plein centre-ville ou en pleine nature</p>
@@ -58,7 +58,7 @@
                     </form>
                 </div>
                 
-                    <div class="filtres-container" id="filtres-container"> <!--filtres (container pour display: flex;)-->
+                    <div class="filtres-container" id="filtres-container"> <!--filtres container pour display: flex;-->
                         <div class="filtres-elements">
                             <p class="filtres-desc">Filtres</p> <!--description-->
                         </div>
@@ -89,13 +89,14 @@
                             </button>
                         </div>
                     </div>
-                    <div class="global-container-mobile">
-                    <div class="filtres-container-mobile">
+                    <!--filtres version mobile-->
+                    <div class="global-container-mobile"> <!--double container de filtres display:flex-->
+                    <div class="filtres-container-mobile"> 
                         <div class="filtres-elements-mobile">
                             <p class="filtres-desc-mobile">Filtres</p>
                         </div>
                         <div class="filtres-elements-mobile filtres-buttons-mobile">
-                            <div class="filtres-elements-mobile-firstrow">
+                            <div class="filtres-elements-mobile-firstrow"> <!-- Première rangée-->
                                 <button>
                                     <span>
                                         <i class="fas fa-money-bill-wave"></i>
@@ -109,7 +110,7 @@
                                     </span>
                                 </button>
                             </div>
-                            <div class="filtres-elements-mobile-secondrow">
+                            <div class="filtres-elements-mobile-secondrow"> <!-- Deuxième rangée-->
                                 <button>
                                     <span>
                                         <i class="fas fa-heart"></i>
@@ -136,11 +137,11 @@
                 <!--Marseille -->
                 <article class="hebergements-marseille hebergements-plus-les-plus-populaires padding-exclusif-mobile">
                     <h2 class="hebergements-description"> Hébergements à Marseille</h2>
-                    <div id="offres-hebergement-container"> <!--Container card hebergement-->
+                    <div id="offres-hebergement-container"> <!--Container des cards hebergement-->
                         <div class="offres-hebergement"> <!--La carte hebergement, pareil pour les autres "offres-hebergement ci-dessous"-->
                             <a href="">
                             <figure class="offre">
-                                <img src="/hebergements/3_medium/La-canebière.jpg" alt="">
+                                <img src="hebergements/3_medium/La-canebière.jpg" alt="">
                             </figure>
                             <div class="description-offre">
                                 <p>Hôtel La Canebière</p>
@@ -156,7 +157,7 @@
                         <div class="offres-hebergement">
                             <a href="">
                             <figure class="offre">
-                                <img src="/hebergements/3_medium/hotel-du-port.jpg" alt="">
+                                <img src="hebergements/3_medium/hotel-du-port.jpg" alt="">
                             </figure>
                             <div class="description-offre">
                                 <p>Hôtel du port</p>
@@ -253,7 +254,7 @@
                         <article class="offres-lespluspopulaires-containers"><!-- cards les plus populaires -->
                             <a href=""> 
                             <figure class="offre-lespluspopulaires" id="offre-lespluspopulaires-le-soleil-du-matin">
-                                <img src="/hebergements/4_small/Soleil_du_matin.jpg" alt="" id="offre-une">
+                                <img src="hebergements/4_small/Soleil_du_matin.jpg" alt="" id="offre-une">
                             </figure>
                             <div class="description" id="description-le-soleil-du-matin">
                                 <div>
@@ -274,7 +275,7 @@
                         <article class="offres-lespluspopulaires-containers">
                             <a href="">
                             <figure class="offre-lespluspopulaires" id="offre-lespluspopulaires-au-coeur-de-leau">
-                                <img src="/hebergements/4_small/Au_coeur_de_leau.jpg" alt="" id="offre-deux">
+                                <img src="hebergements/4_small/Au_coeur_de_leau.jpg" alt="" id="offre-deux">
                             </figure>
                             <div class="description" id="description-au-coeur-de-leau">
                                 <div>
@@ -294,7 +295,7 @@
                         <article class="offres-lespluspopulaires-containers">
                             <a href="">
                             <figure class="offre-lespluspopulaires" id="offre-lespluspopulaires-bleu-et-blanc">
-                                <img src="/hebergements/4_small/bleu-et-blanc.jpg" alt="" id="offre-trois">
+                                <img src="hebergements/4_small/bleu-et-blanc.jpg" alt="" id="offre-trois">
                             </figure>
                             <div class="description" id="description-bleu-et-blanc">
                                 <div>
@@ -328,7 +329,7 @@
                             <!-- La carte activité (pareil pour les 4 autres articles)-->
                             <a href="">
                             <figure>
-                                <img src="/activites/1_xlarge/Vieux-Port.jpg" alt="Vieux port">
+                                <img src="activites/1_xlarge/Vieux-Port.jpg" alt="Vieux port">
                             </figure>
                             <div>
                                 <p>Vieux-Port </p>
@@ -338,7 +339,7 @@
                         <div class="carte-activite carte-activite-mobile">
                             <a href="">
                             <figure>
-                                <img src="/activites/1_xlarge/Fort-de-Pomègues.jpg" alt="Fort de Pomègues">
+                                <img src="activites/1_xlarge/Fort-de-Pomègues.jpg" alt="Fort de Pomègues">
                             </figure>
                             <div>
                                 <p>Fort de Pomègues </p>
@@ -348,7 +349,7 @@
                         <div class="carte-activite carte-activite-mobile">
                             <a href="">
                             <figure>
-                                <img src="/activites/1_xlarge/Parc-national-des-calanques.jpg" alt="">
+                                <img src="activites/1_xlarge/Parc-national-des-calanques.jpg" alt="">
                             </figure>
                             <div>
                                 <p>Parc national des Calanques </p>
@@ -358,8 +359,7 @@
                         <div class="carte-activite carte-activite-mobile">
                             <a href="">
                             <figure>
-
-                                <img src="/activites/1_xlarge/Notre-Dame-de-la-Garde.jpg" alt="">
+                                <img src="activites/1_xlarge/Notre-Dame-de-la-Garde.jpg" alt="">
                             </figure>
                             <div>
                                 <p class="activite-version-tablette">Notre Dame <br> De La Garde</p> <!-- s'affiche avec un retour ligne seulement sur tablette-->
