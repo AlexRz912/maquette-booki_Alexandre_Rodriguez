@@ -1,118 +1,79 @@
 /* ensemble de la page */
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 body {
-
     max-width: 1400px;
     padding-top: 40px;
     padding-left: 4%;
     padding-right: 4%;
     margin: auto;
     font-family: "raleway", Arial, Helvetica, sans-serif;
-
 }
-
 form p {
     font-family: "raleway", Arial, Helvetica, sans-serif;
 }
-
-
 ul {
     list-style-type: none;
 }
-
 h1 {
     font-weight: bold;
 }
-
 p {
     font-weight: bold;
 }
-
 .p-unbolded {
     font-weight: normal;
 }
-
 .price {
     font-size: 14px;
 }
-
-
 /* logo booki à gauche/navbar à droite
  */
 header {
-
     margin: 5px 20px 40px 0px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
-
 header img {
     width: 33%;
 }
-
 header .logo-booki-mobile {
     display: none;
-
 }
-
-
 #navbar {
     height: 100%;
 }
-
-
 header ul {
     display: flex;
     flex-direction: row;
-
 }
-
 /*section ancre */
-
-
 nav a {
-
     text-decoration: none;
     color: black;
     padding: 42px 20px 0px 20px;
     /*42px 20px 0px 20px */
-
-
-
 }
-
 nav a:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
-
-
 .ancre-mobile {
     display: none;
 }
 /* section recherche */
-
-
 #block-recherche_description {
     margin-bottom: 20px;
-
 }
-
 #ligne-accroche {
-
     font-size: 22px;
     margin-bottom: 7px;
 }
-
 #block-recherche_description .p-unbolded {
     font-size: 18px;
 }
@@ -124,18 +85,13 @@ nav a:hover {
     margin-right: -5px;
     border-radius: 15px 0px 0px 15px;
 }
-
 .input-recherche {
     margin-bottom: 20px;
-
 }
-
 .input-recherche .fa {
     display: none;
 }
-
 input {
-
     font-size: 18px;
     font-weight: bold;
     font-family: "ralewayregular", Arial, Helvetica, sans-serif;
@@ -148,9 +104,7 @@ input {
     border-bottom: 1px solid #F2F2F2;
 
 }
-
 #button_block-recherche {
-
     background-color: #0065FC;
     color: white;
     padding-top: 17px;
@@ -164,23 +118,18 @@ input {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     font-family: 'raleway', Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    
-    
+    font-weight: bold; 
 }
-
 .recherche-vacances .fa-search {
     display: none;
 }
 /* section filtres */
-
 .filtres-container {
     display: flex;
     flex-direction: row;
     width: 100%;
     margin-bottom: 30px;
 }
-
 .filtres-container-mobile {
     display: none;
 }
@@ -188,22 +137,14 @@ input {
     margin-top: 12px;
     margin-right: 12px;
 }
-
 .filtres-elements .fas {
     color: #0065FC;
-    
     padding: 10px 10px 10px 10px;
 }
-
 .filtres-buttons {
     width: 100%;
-
 }
-
-
 .filtres-elements button {
-
-
     font-weight: bold;
     font-size: 17px;
     margin-right: 2%;
@@ -217,24 +158,17 @@ input {
     margin-left: 10px;
     margin-right: 10px;
     padding: 0px 10px 0px 0px;
-
-
 }
-
 .filtres-elements button div {
     display: flex;
     flex-direction: row;
 }
-
 .filtres-elements button:focus {
     background-color: #DEEBFF;
-
 }
-
 .logements-disponible {
     margin-bottom: 30px;
 }
-
 .fa-info {
     font-size: 10px;
     color: #0065FC;
@@ -242,9 +176,7 @@ input {
     border-radius: 100%;
     padding: 6px 10px;
     margin-right: 40px;
-
 }
-
 .logements-disponible p {
     padding-top: 15px;
 }
@@ -260,77 +192,52 @@ input {
     margin-bottom: 60px;
     justify-content: space-between;
     width: 100%;
-    
-
 }
-
 .hebergements-plus-lespluspopulaires-container a {
     text-decoration: none;
     color: black;
 }
-
 .activites-a-marseille-container a {
     text-decoration: none;
     color: black;
 }
-
 /* couleurs et marges pour hebergements/les-plus-populaires */
-
 .hebergements-plus-les-plus-populaires {
     background-color: #F2F2F2;
     border-radius: 25px;
     padding-top: 30px;
     padding-left: 35px;
     padding-right: 35px;
-
 }
-
 /* avis client étoiles pour hebergements/les-plus-populaires */
-
 .fa-star {
     color: #0065FC;
     font-size: 12px;
     margin-right: -3px;
 }
-
 .grey-star {
     color: #F2F2F2;
 }
-
-
-
 /* entete des hebergements */
 .hebergements-description {
     font-size: 20px;
     padding-bottom: 30px;
     margin-top: 10px;
 }
-
-
-
 /*container de l'article hebergement marseille */
-
 .hebergements-marseille {
     display: flex;
     flex-direction: column;
     width: 65%;
-
-
-
-
 }
-
-/* container qui contient les 6 cartes */
-
+/* container qui contient les 6 cartes hebergements */
 #offres-hebergement-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 /* card */
-
 .offres-hebergement {
     background-color: white;
     border-radius: 20px;
@@ -339,85 +246,52 @@ input {
     box-shadow: 0px 0px 20px rgb(186, 186, 186);
     margin-bottom: 35px;
 }
-
-
-
 .offre {
-
-
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-
-
-
-
 }
-
-
 .hebergements-marseille img {
     width: 100%;
     height: 110px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
-
 .description-offre {
     padding-top: 4px;
     padding-left: 8px;
 }
-
 .description-offre p {
     padding-bottom: 4px;
     font-size: 16px;
 }
-
-
-
-
 #Afficher-plus {
     padding-bottom: 40px;
 }
-
 .lespluspopulaires {
-
-
     width: 32%;
-
 }
-
 /* entete des plus populaires titre et graph */
-
 .entete-populaires {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-
 }
-
 .graph-aside {
     display: flex;
     justify-content: flex-end;
     color: #0065FC;
 }
-
 /* contient les 3 cards */
 .lespluspopulaires-container {
-
     display: flex;
     flex-direction: column;
-
-
 }
-
-.titre-activites-version-mobile {
+.titre-activites-version-mobile { /*version mobile d'activité à marseille, pas affichée sur la version desktop */
     display: none;
 }
 /* la card des offres plus populaires */
-
 .offres-lespluspopulaires-containers {
-
-
     position: relative;
     background-color: white;
     border-radius: 20px;
@@ -427,150 +301,108 @@ input {
     padding: 5px 0px 5px 0px;
     box-shadow: 0px 0px 20px rgb(186, 186, 186);
 }
-
-
 #offre-lespluspopulaires-le-soleil-du-matin {
-
     padding-left: 5px;
     width: 55%;
-
 }
-
 #offre-lespluspopulaires-au-coeur-de-leau {
     padding-left: 5px;
     width: 55%;
 }
-
 #offre-lespluspopulaires-bleu-et-blanc {
     width: 55%;
     padding-left: 5px;
 }
-
 .offre-lespluspopulaires img {
-
-
     height: 120px;
     object-fit: cover;
     width: inherit;
     border-radius: 15px 0px 0px 15px;
-
 }
-
-
 .offres-lespluspopulaires-containers .description {
     padding: 10px 20px 5px 20px;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 125px;
-
 }
-
 #description-le-soleil-du-matin {
     position: absolute;
     top: 0;
     left: 30%;
 }
-
 #description-au-coeur-de-leau {
     position: absolute;
     top: 0;
     left: 30%;
 }
-
 #description-bleu-et-blanc {
     position: absolute;
     top: 0;
     left: 30%;
 }
-
 .description .lieu {
     font-size: 16px;
     padding-bottom: 10px;
 }
-
 #lieu-version-tablette {
     display: none;
 }
-
 /* Activités à Marseille */
 .activites-a-marseille {
     margin-bottom: 40px;
 }
-
 /*titre */
 .activites-a-marseille h2 {
     margin-bottom: 25px;
 }
-
 .activites-a-marseille-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
-
 .carte-activite {
     background-color: white;
     border-radius: 25px;
     width: 23%;
-
     box-shadow: 0px 0px 20px rgb(186, 186, 186);
-
 }
-
 .activite-version-mobile-desktop {
     display: block;
 }
-
-.activite-version-tablette {
+.activite-version-tablette { /* version tablette */
     display: none;
 }
-
 .carte-activite img {
     object-fit: cover;
-    
+    width: 100%;
     height: 390px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
-
 .carte-activite div {
     padding: 15px 25px;
 }
-
-
-
-
 /* Pied-de-page */
-
 .pied-de-page {
     background-color: #F2F2F2;
     width: 100%;
-
 }
-
 .pied-de-page-container {
     display: flex;
     flex-direction: row;
     padding: 40px 0px 40px 60px;
 }
-
 .a-propos {
     margin-right: 25%;
 }
-
 .nos-hebergements {
     margin-right: 20%;
 }
-
-
 .pied-de-page h2 {
     font-size: 14px;
     margin-bottom: 20px;
 }
-
 .pied-de-page li {
     font-size: 12px;
     padding-bottom: 15px;
