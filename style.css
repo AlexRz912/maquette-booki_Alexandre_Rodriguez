@@ -37,7 +37,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 header img {
     width: 33%;
@@ -62,7 +61,6 @@ nav a:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
-
 /* section recherche */
 #block-recherche_description {
     margin-bottom: 20px;
@@ -74,7 +72,6 @@ nav a:hover {
 #block-recherche_description .p-unbolded {
     font-size: 18px;
 }
-
 .fa-map-marker-alt {
     font-size: 20px;
     background-color: #F2F2F2;
@@ -99,7 +96,6 @@ input {
     padding-bottom: 13px;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
-
 }
 #button_block-recherche {
     background-color: #0065FC;
@@ -123,7 +119,6 @@ input {
 /* section filtres */
 .filtres-container {
     display: flex;
-    
     margin-bottom: 30px;
 }
 .filtres-desc {
@@ -139,12 +134,9 @@ input {
     display: flex;
     flex-direction: row;
 }
-
-
 .filtres-elements button {
     font-weight: bold;
     font-size: 17px;
-    
     font-family: 'raleway', Arial, Helvetica, sans-serif;
     background-color: white;
     border: 3px solid #d9d9d9;
@@ -280,7 +272,6 @@ input {
     display: flex;
     flex-direction: column;
 }
-
 /* la card des offres plus populaires */
 .offres-lespluspopulaires-containers {
     position: relative;
@@ -358,7 +349,6 @@ input {
     width: 23%;
     box-shadow: 0px 0px 20px rgb(186, 186, 186);
 }
-
 .carte-activite img {
     object-fit: cover;
     width: 100%;
